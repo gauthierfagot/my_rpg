@@ -10,6 +10,7 @@
 
 typedef enum textures_e {
     FLOOR = 0,
+    STRUCTURE,
 }textures_t;
 
 #endif

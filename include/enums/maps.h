@@ -10,6 +10,7 @@
 
 static const char *MAPS[] = {
     "./assets/maps/static.txt",
+    "./assets/maps/structures.txt",
 };
 
 #endif

@@ -10,15 +10,28 @@
 
     #include <stddef.h>
     #include <SFML/Graphics.h>
+    #include "floor_struct.h"
 
 static const char *MAP_CORESPONDANCE[] = {
-    "#+~T",
+    "#+~",
+    "HBTtprbgc",
     NULL,
 };
 
-sfSprite *init_floor_case(sfTexture *texture);
+static const bool FLOOR_COLISION[] = {
+    false,
+    false,
+    true,
+};
 
-static sfSprite *(*INIT_MAP_FUNC[])(sfTexture *) = {
+static const bool *COLISION[] = {
+    FLOOR_COLISION,
+};
+
+floor_t *init_floor_case(sfTexture *texture, char c, size_t type);
+
+static floor_t *(*INIT_MAP_FUNC[])(sfTexture *, char, size_t) = {
+    init_floor_case,
     init_floor_case,
 };
 

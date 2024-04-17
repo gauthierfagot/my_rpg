@@ -14,12 +14,25 @@ static const char *INIT_FLOOR_TEXTURE[] = {
     "./assets/sprites/static/grass.png",
     "./assets/sprites/static/sand.png",
     "./assets/sprites/static/water.png",
-    "./assets/sprites/static/tree.png",
+    NULL,
+};
+
+static const char *INIT_STRUCTURE_TEXTURE[] = {
+    "./assets/sprites/structure/house.png",
+    "./assets/sprites/structure/bush.png",
+    "./assets/sprites/structure/big_tree.png",
+    "./assets/sprites/structure/small_tree.png",
+    "./assets/sprites/structure/pink_flower.png",
+    "./assets/sprites/structure/red_flower.png",
+    "./assets/sprites/structure/blue_flower.png",
+    "./assets/sprites/structure/grass1.png",
+    "./assets/sprites/structure/rock.png",
     NULL,
 };
 
 static const char **INIT_TEXTURE_TAB[] = {
     INIT_FLOOR_TEXTURE,
+    INIT_STRUCTURE_TEXTURE,
 };
 
 static const size_t TEXTURE_TAB_S = sizeof(INIT_TEXTURE_TAB) / sizeof(char *);
