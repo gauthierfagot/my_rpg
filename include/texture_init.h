@@ -17,6 +17,12 @@ static const char *INIT_FLOOR_TEXTURE[] = {
     NULL,
 };
 
+static const char *INIT_COLISION_TEXTURE[] = {
+    "./assets/sprites/static/test.png",
+	NULL,
+};
+
+
 static const char *INIT_STRUCTURE_TEXTURE[] = {
     "./assets/sprites/structure/house.png",
     "./assets/sprites/structure/bush.png",
@@ -33,6 +39,7 @@ static const char *INIT_STRUCTURE_TEXTURE[] = {
 static const char **INIT_TEXTURE_TAB[] = {
     INIT_FLOOR_TEXTURE,
     INIT_STRUCTURE_TEXTURE,
+	INIT_COLISION_TEXTURE,
 };
 
 static const size_t TEXTURE_TAB_S = sizeof(INIT_TEXTURE_TAB) / sizeof(char *);

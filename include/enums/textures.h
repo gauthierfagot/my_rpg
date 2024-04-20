@@ -11,6 +11,7 @@
 typedef enum textures_e {
     FLOOR = 0,
     STRUCTURE,
+	COLISIONS
 }textures_t;
 
 #endif

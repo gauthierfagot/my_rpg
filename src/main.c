@@ -20,7 +20,7 @@ static void draw_map(sfRenderWindow *wnd, floor_t ***floor)
     }
 }
 
-static bool start_window(floor_t ***floor, floor_t ***structures)
+static bool start_window(floor_t ***floor, floor_t ***structures, floor_t ***colision)
 {
     sfRenderWindow *wnd = sfRenderWindow_create((sfVideoMode){1000, 500, 100}, "my rpg", 4 | 2, NULL);
     sfEvent event;
@@ -28,6 +28,7 @@ static bool start_window(floor_t ***floor, floor_t ***structures)
     while (sfRenderWindow_isOpen(wnd)) {
         draw_map(wnd, floor);
         draw_map(wnd, structures);
+        draw_map(wnd, colision);
         while (sfRenderWindow_pollEvent(wnd, &event)) {
         if (event.type == sfEvtClosed)
             sfRenderWindow_close(wnd);
@@ -43,13 +44,15 @@ int main(int argc, char **argv, char **env)
     sfTexture ***textures = init_textures();
     floor_t ***floor = NULL;
     floor_t ***structures = NULL;
+	floor_t ***colision = NULL;
 
     if (textures == NULL)
         return 84;
     floor = get_map(textures, FLOOR);
     structures = get_map(textures, STRUCTURE);
+	colision = get_map(textures, COLISIONS);
     if (floor == NULL || structures == NULL)
         return 84;
-    start_window(floor, structures);
+    start_window(floor, structures, colision);
     return 0;
 }

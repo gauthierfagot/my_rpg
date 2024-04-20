@@ -29,7 +29,7 @@ floor_t *init_floor_case(sfTexture *texture, char c, size_t type)
     new->size = (sfVector2i){1, 1};
     for (size_t i = 0; MAP_CORESPONDANCE[type][i]; i++)
         if (c == MAP_CORESPONDANCE[type][i]) {
-            new->colision = COLISION[type][i];
+            //new->colision = COLISION[type][i];
             sfSprite_setScale(new->sprite,
                 sprite_size(texture, ELEMENTS_SIZE[type][i]));
             sfSprite_setOrigin(new->sprite,

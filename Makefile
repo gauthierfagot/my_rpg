@@ -42,6 +42,10 @@ make_lib:
 $(NAME):	make_lib $(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LDLIBS)
 
+colision:
+	make re -C ./bonus/
+	./bonus/colision_generator
+
 clean:
 	$(RM) $(OBJ)
 	make clean -C ./lib/my

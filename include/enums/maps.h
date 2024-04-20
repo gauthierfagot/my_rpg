@@ -9,8 +9,9 @@
     #define MAPS_H
 
 static const char *MAPS[] = {
-    "./assets/maps/static.txt",
-    "./assets/maps/structures.txt",
+    "./config/static.txt",
+    "./config/structures.txt",
+	"./config/colisions.txt",
 };
 
 #endif

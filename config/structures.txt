@@ -3,18 +3,18 @@
   ppp pgg  t g p p  b  rg       g  g
    p   r  t  p p  g p p    c
       b   b  r g  g     c       g c
-  r   rbp rc g   g          g        g   
- gT b  r   p   r   r   c
+   p p  pppp  pp pp  p p
+ gT b  r  p p   r   r   c
   g gb   p  c r p bb        c    c   c
        b     r  rpg           g    g
-          p c  c
-                                       g     
-   H     ggt  H      t        g
+          p c  c       p
+    g
+   H     ggt         t        g
                 g
-     c  c         c                 c
-    c          
+     c  c   H      c                 c
+    c
               c        g        g
- 
+                b
   g  gp grb r gg p pp bbr           g
     r bb r bb   r bb p bb
   H      t  H
