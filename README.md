@@ -13,7 +13,12 @@ Everything detailled on our Wiki : https://github.com/EpitechPromo2028/B-MUL-200
 
 ## Getting Started
 
-to get started, just ```make && ./my_rpg```
+In order to start you'll need to compile with ```make```
+
+Now that you compile it's a whole new world oppening to you, create whatever you want.
+Our configuration file in `./config` is an exemple but if you've read the doc you know what to do !!!
+
+Then when you've finish your stuff launch it with ```./myrpg```
 
 
 ## Contributors
